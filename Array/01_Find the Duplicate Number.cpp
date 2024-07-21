@@ -1,0 +1,19 @@
+//using constent space and we are not modifying the array
+// using two pointer T.C = O(2n) S.C = O(1)
+// class Solution {
+// public:
+//     int findDuplicate(vector<int>& nums) {
+//         int slow = nums[0];
+//         int fast = nums[0];
+//         do{
+//             slow=nums[slow];
+//             fast=nums[nums[fast]];
+//         }while(slow!=fast);
+//         fast=nums[0];
+//         while(slow!=fast){
+//             slow=nums[slow];
+//             fast=nums[fast];
+//         }
+//         return slow;  
+//     }
+// };
